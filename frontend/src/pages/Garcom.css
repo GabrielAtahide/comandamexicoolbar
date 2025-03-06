@@ -1,0 +1,151 @@
+
+
+body {
+  font-family: 'Merriweather', serif;/* Fonte para o corpo do texto */
+  margin: 0;
+  padding: 0;
+  background-color:#ffff3f;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  
+}
+
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.title {
+  font-family: 'Roboto Slab', serif; /* Fonte para títulos */
+  font-size: 2.5rem;
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.mesas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+  gap: 20px;
+  padding: 20px;
+}
+
+.mesa-item {
+  background-color: #4caf50; /* Verde */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mesa-item:hover {
+  background-color: #45a049; /* Verde mais escuro */
+}
+
+.mesa-detalhes {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.comanda-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comanda-card.selected {
+  background-color: #e0f7fa; /* Cor de fundo para a comanda selecionada */
+  border-color: #4caf50;
+}
+
+.comanda-card:hover {
+  background-color: #f9f9f9;
+}
+
+.comanda-card button {
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Charter Bd BT', serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.comanda-card button:hover {
+  background-color: #45a049;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Charter Bd BT', serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Charter Bd BT', serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.total-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.total-card h3 {
+  margin-top: 0;
+  color: #4caf50;
+  font-family: 'Bremen Bd BT', serif;
+}
+
+.total-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Charter Bd BT', serif;
+}
